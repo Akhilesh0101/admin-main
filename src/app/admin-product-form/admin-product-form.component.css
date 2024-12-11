@@ -1,0 +1,62 @@
+/* Custom Styles for Admin Product Form */
+.container {
+    max-width: 600px;
+  }
+  
+  h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-label {
+    font-weight: 500;
+    color: #333;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  textarea {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    transition: all 0.3s ease;
+  }
+  
+  input[type="text"]:focus,
+  input[type="number"]:focus,
+  textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  button[type="submit"]:disabled {
+    
+    cursor: not-allowed;
+  }
+  
+  button[type="submit"] {
+    font-weight: 600;
+    padding: 12px;
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+  }
+  
+  button[type="submit"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.25rem rgba(38, 143, 255, 0.5);
+  }
+  

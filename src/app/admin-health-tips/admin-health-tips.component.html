@@ -1,0 +1,35 @@
+<div class="container mt-4">
+  <h2 class="text-center">Health Tips Management</h2>
+
+  <!-- Add Health Tip Button -->
+  <div class="text-end mb-3">
+      <button class="btn btn-success" (click)="onAddHealthTip()">Add Health Tip</button>
+  </div>
+
+  <!-- Health Tips Table -->
+  <table class="table table-bordered table-striped text-center">
+      <thead>
+          <tr>
+              <th>#</th>
+              <th>Health Tip Title</th>
+              <th>Description</th>
+              <th>Images</th>
+              <th>CategoryId</th>
+              <th>Actions</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let tip of healthTips; let i = index">
+              <td>{{ i + 1 }}</td>
+              <td>{{ tip.TipTitle }}</td>
+              <td>{{ tip.TipDescription }}</td>
+              <td><img src="{{tip.HealthTipsimg}}" width="100" height="100"></td>
+              <td>{{tip.CategoryId}}</td>
+              <td>
+                  <button class="btn btn-primary btn-sm me-2" (click)="onEditHealthTip(tip)">Edit</button>
+                  <button class="btn btn-danger btn-sm" (click)="onDeleteHealthTip(tip.TipId)">Delete</button>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+</div>

@@ -1,0 +1,97 @@
+/* Container styling */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header */
+h2 {
+  font-family: 'Arial', sans-serif;
+  color: #343a40;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Table Header */
+thead {
+  background-color: #007bff;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Table Rows */
+tbody tr {
+  background-color: #f8f9fa;
+  transition: background-color 0.3s ease;
+}
+
+tbody tr:hover {
+  background-color: #e9ecef;
+}
+
+/* Table Cells */
+td {
+  padding: 15px;
+  vertical-align: middle;
+}
+
+/* Image Styling */
+img {
+  max-width: 100px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* Action Buttons */
+.btn-sm {
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+.text-end button {
+  padding: 10px 20px;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+  .table {
+    font-size: 12px;
+  }
+  
+  td img {
+    max-width: 60px;
+  }
+
+  .btn-sm {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}

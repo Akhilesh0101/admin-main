@@ -1,0 +1,37 @@
+:host {
+    display: block;
+    background-color:azure;
+    min-height: 100vh; /* Ensures the background covers full height */
+    padding-top: 20px; /* Adds spacing at the top */
+  }
+  .navbar
+  {
+    margin-bottom: 100px;
+    background-color:aquamarine;
+    border-radius: 10px;
+}
+.card {
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  }
+  
+  .card-body {
+    padding: 20px;
+    margin: 50px;
+    
+  }
+  
+  .card .btn {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+ 
+  
+  .card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+    transform: translateY(-10px); /* Moves the card slightly upwards */
+  }
+  
+  

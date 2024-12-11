@@ -1,0 +1,67 @@
+
+<div class="container  ">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light  p-3 ">
+    <a class="navbar-brand" href="#">Admin Panel</a>
+    <div class="ml-auto">
+      <div class="dropdown">
+        <button class="btn btn-outline-primary dropdown-toggle" type="button" id="adminProfile" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="bi bi-person-circle"></i> Admin Profile
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="adminProfile">
+          <li><a class="dropdown-item" href="/admin-profile">View Profile</a></li>
+          <li><a class="dropdown-item" href="#">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Cards -->
+  <div class="row ">
+    <!-- Total Product -->
+    <div class="col-md-4">
+      <div class="card text-center">
+        <div class="card-body ">
+          <h4 class="card-title"> Products</h4>
+          <h1><i class="bi bi-bag"></i></h1>
+          <a class="btn btn-primary" href="/admin-product"> View Product</a>        
+      </div>
+    </div>
+    </div>
+
+    <!-- Total Remedies -->
+    <div class="col-md-4">
+      <div class="card text-center">
+        <div class="card-body">
+          <h4 class="card-title">Remedies</h4>
+        <h1><i class="bi bi-bandaid"></i></h1>
+          <a class="btn btn-success" href="/admin-remedies">View Remedies</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Total Health Tips -->
+    <div class="col-md-4">
+      <div class="card text-center">
+        <div class="card-body">
+          <h4 class="card-title">Health Tips</h4>
+          <h1><i class="bi bi-lungs"></i></h1>
+          <a class="btn btn-success" href="/admin-health-tips">View healthTips</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Total User -->
+    <div class="col-md-4 mt-4">
+      <div class="card text-center">
+        <div class="card-body">
+          <h4 class="card-title">Users</h4>
+         <h1><i class="bi bi-person"></i></h1>
+          <a class="btn btn-success" href="/admin-user-details">User Details</a>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+</div>

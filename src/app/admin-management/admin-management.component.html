@@ -1,0 +1,36 @@
+<div class="container mt-4">
+    <h2 class="text-center">Admin Management</h2>
+  
+    <!-- Add Admin Button -->
+    <div class="text-end mb-3">
+      <button class="btn btn-success" (click)="onCreateAdmin()">Add Admin</button>
+    </div>
+  
+    <!-- Admins Table -->
+    <table class="table table-bordered table-striped text-center">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Username</th>
+          <th>Email</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let admin of admins; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ admin.Username }}</td>
+          <td>{{ admin.Email }}</td>
+          <td>
+            <button
+              class="btn btn-danger btn-sm"
+              (click)="onDeleteAdmin(admin.AdminID)"
+            >
+              Delete
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
